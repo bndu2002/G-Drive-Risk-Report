@@ -89,7 +89,6 @@ function Files() {
       let response = await fetch("/auth/revokeToken", fetchObject);
 
       if (response.ok) {
-        window.alert("revoked");
         navigate("/");
       } else {
         let errmsg = await response.json();
