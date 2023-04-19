@@ -18,11 +18,11 @@ let auth = async function (req, res) {
             scope: ['https://www.googleapis.com/auth/userinfo.email', 'https://www.googleapis.com/auth/drive.readonly.metadata', 'https://www.googleapis.com/auth/drive', 'https://www.googleapis.com/auth/drive.readonly',]
         });
         console.log(`Visit this URL to authorize the application: ${authorizeUrl}`);
-        res.redirect(authorizeUrl)
+       return  res.redirect(authorizeUrl)
 
 
     } catch (error) {
-        res.send(error.message);
+        res.status(500).send({status:false , message : error.message});
     }
 };
 
@@ -135,7 +135,7 @@ const getFiles = async function (req, res) {
         console.log(finalData.publicFiles.length);
         return res.sendStatus(finalData.externallyShared.length)
     } catch (error) {
-        return res.send({ status: false, message: error.message })
+        return res.status(500).send({ status: false, message: error.message })
     }
 
 }

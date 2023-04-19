@@ -85,7 +85,7 @@ const getToken = async function (req, res, next) {
         }
 
     } catch (error) {
-        res.send(error.message)
+        return res.status(500).send({status:false , message : error.message})
     }
 }
 
