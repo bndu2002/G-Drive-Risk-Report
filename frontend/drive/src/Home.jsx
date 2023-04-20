@@ -1,7 +1,6 @@
 import React from "react";
 
-function Home() {
-  //const [scanClicked, setscanClicked] = useState(false);
+function Home() { 
 
   const getAuth = async (req, res) => {
     try {

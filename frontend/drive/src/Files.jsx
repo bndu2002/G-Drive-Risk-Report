@@ -30,9 +30,10 @@ function Files() {
         },
         Credential: "includes",
       };
-
+                        //constructor 👇 creates a new object that represents the query parameters in the URL.                     
       const urlParams = new URLSearchParams(window.location.search);
-
+                                            //👆returns the query string part of the current URL
+                  // 👇 retrieves the value of the code parameter
       const code = urlParams.get("code");
 
       const response = await fetch(
