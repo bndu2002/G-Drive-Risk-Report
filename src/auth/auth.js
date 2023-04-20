@@ -48,7 +48,7 @@ const getToken = async function (req, res, next) {
                     code,
                     client_id: '237393158742-se7477e3kpsp266lpjoenr4is60ta3i9.apps.googleusercontent.com',
                     client_secret: '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',
-                    redirect_uri: 'http://localhost:3000/auth/google/callback',
+                    redirect_uri: 'http://localhost:3001/auth/google/callback',
                     grant_type: 'authorization_code'
                 }
             });
@@ -89,5 +89,5 @@ const getToken = async function (req, res, next) {
     }
 }
 
-//module.exports.auth = auth
+
 module.exports.getToken = getToken
