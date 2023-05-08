@@ -51,7 +51,7 @@ function App() {
         : null} */}
       <Routes>
         <Route path ="/" element={<Home />} />
-        <Route path="/Oauth2callback" element={<Files />} />
+        <Route path="/Oauth2callback/*" element={<Files />} />
       </Routes>
 
 
