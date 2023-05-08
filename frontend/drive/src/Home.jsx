@@ -2,7 +2,7 @@ import React from "react";
 
 function Home() { 
 
-  const backendUrl = "https://g-drive-risk-report-lvn6.vercel.app/"
+  const backendUrl = "https://g-drive-risk-report-lvn6.vercel.app"
   const getAuth = async () => {
     try {
       let fetchObject = {

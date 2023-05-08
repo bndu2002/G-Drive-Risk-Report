@@ -9,7 +9,7 @@ import { Progress } from "antd";
 import "./index.css";
 
 function Files() {
-  const backendUrl = 'https://g-drive-risk-report-lvn6.vercel.app/'
+  const backendUrl = 'https://g-drive-risk-report-lvn6.vercel.app'
   const [publicFiles, setpublicFiles] = useState([]);
   const [externallyShared, setexternallyShared] = useState([]);
   const [peopleWithAccess, setpeopleWithAccess] = useState([]);
