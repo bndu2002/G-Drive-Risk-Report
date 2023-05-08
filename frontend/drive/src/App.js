@@ -50,8 +50,8 @@ function App() {
         <button onClick={getAuth}>Scan my Google Drive</button></div>
         : null} */}
       <Routes>
-        <Route path ="/" element={<Home />} />
-        <Route path="/auth/google/callback" element={<Files />} />
+        <Route path ="https://6458aedf7689dc000848a33c--meek-elf-f811cc.netlify.app" element={<Home />} />
+        <Route path="https://6458aedf7689dc000848a33c--meek-elf-f811cc.netlify.app/auth/google/callback" element={<Files />} />
       </Routes>
 
 

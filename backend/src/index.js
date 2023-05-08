@@ -3,8 +3,11 @@ const app = express()
 const mongoose = require('mongoose')
 const route = require('./routes/route.js');
 const cookieParser = require('cookie-parser');
+const cors = require('cors')
 const PORT = 3000
 
+
+app.use(cors({  origin: '*',}));
 app.use(cookieParser());
 
 // Set refresh token in cookie
@@ -17,7 +20,7 @@ mongoose.connect("mongodb+srv://vandana:7CJBNDDwPorDTTrX@cluster0.crrs6th.mongod
 app.use('/', route);
 
 
-app.listen(  PORT, function () {
+app.listen(PORT, function () {
     console.log('Express app running on port ' + PORT)
 });
 
