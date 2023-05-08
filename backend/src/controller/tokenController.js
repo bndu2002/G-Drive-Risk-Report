@@ -5,7 +5,7 @@ const { google } = require('googleapis');
 const oauth2Client = new google.auth.OAuth2(
     '237393158742-se7477e3kpsp266lpjoenr4is60ta3i9.apps.googleusercontent.com',
     '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',
-    'http://localhost:3001/auth/google/callback'
+    'https://6458a8aa00be8600094dbc72--meek-elf-f811cc.netlify.app//auth/google/callback'
 );
 
 let auth = async function (req, res) {
