@@ -48,7 +48,7 @@ const getToken = async function (req, res, next) {
                     code,
                     client_id: '237393158742-se7477e3kpsp266lpjoenr4is60ta3i9.apps.googleusercontent.com',
                     client_secret: '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',
-                    redirect_uri: 'https://6458aedf7689dc000848a33c--meek-elf-f811cc.netlify.app/auth/google/callback',
+                    redirect_uri: 'https://6458c3b7a3b01400098a085b--chic-tanuki-6f29cd.netlify.app/auth/google/callback',
                     grant_type: 'authorization_code'
                 }
             });
