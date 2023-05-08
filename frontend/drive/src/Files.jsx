@@ -61,7 +61,7 @@ function Files() {
         //indigate();
         console.log("here is thsi", peopleWithAccess);
       } else {
-        let { status, message } = data;
+        let {message } = data;
         window.alert(message);
       }
       setLoading(false);
@@ -94,7 +94,7 @@ function Files() {
         navigate("/");
       } else {
         let errmsg = await response.json();
-        let { status, message } = errmsg;
+        let { message } = errmsg;
         window.alert(message);
       }
     } catch (error) {
@@ -175,11 +175,13 @@ function Files() {
       getDriveFiles();
       setRefreshed(true);
     }
+    // eslint-disable-next-line 
   }, [refreshed]);
 
   useEffect(() => {
     indigate();
     getRiskScore(percent);
+    // eslint-disable-next-line 
   }, [externallyShared]);
 
   return (
