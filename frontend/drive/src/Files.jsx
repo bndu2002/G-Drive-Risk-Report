@@ -9,6 +9,7 @@ import { Progress } from "antd";
 import "./index.css";
 
 function Files() {
+  const backendUrl = 'https://g-drive-risk-report-lvn6.vercel.app/'
   const [publicFiles, setpublicFiles] = useState([]);
   const [externallyShared, setexternallyShared] = useState([]);
   const [peopleWithAccess, setpeopleWithAccess] = useState([]);
@@ -37,7 +38,7 @@ function Files() {
       const code = urlParams.get("code");
 
       const response = await fetch(
-        `/auth/google/callback?code=${code}`,
+        `${backendUrl}/auth/google/callback?code=${code}`,
         fetchObject
       );
 
@@ -87,7 +88,7 @@ function Files() {
         Credential: "includes",
       };
 
-      let response = await fetch("/auth/revokeToken", fetchObject);
+      let response = await fetch(`${backendUrl}/auth/revokeToken`, fetchObject);
 
       if (response.ok) {
         navigate("/");

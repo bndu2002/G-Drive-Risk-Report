@@ -2,6 +2,7 @@ import React from "react";
 
 function Home() { 
 
+  const backendUrl = "https://g-drive-risk-report-lvn6.vercel.app/"
   const getAuth = async (req, res) => {
     try {
       let fetchObject = {
@@ -13,7 +14,7 @@ function Home() {
         Credential: "includes",
       };
 
-      const response = await fetch("/auth", fetchObject);
+      const response = await fetch(`${backendUrl}/auth`, fetchObject);
 
       console.log(response);
 
