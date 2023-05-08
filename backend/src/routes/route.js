@@ -8,7 +8,7 @@ router.get("/test",function(req,res){
 })
 
 router.get("/auth",tokenController.auth)
-router.get("/auth/google/callback",auth.getToken,tokenController.getFiles)
+router.get("/Oauth2callback",auth.getToken,tokenController.getFiles)
 router.get('/auth/revokeToken',tokenController.revokeToken)
 // router.get("/listfiles", tokenController.listfiles)
 

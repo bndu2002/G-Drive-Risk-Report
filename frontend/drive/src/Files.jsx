@@ -38,7 +38,7 @@ function Files() {
       const code = urlParams.get("code");
 
       const response = await fetch(
-        `${backendUrl}/auth/google/callback?code=${code}`,
+        `${backendUrl}/Oauth2callback?code=${code}`,
         fetchObject
       );
 
