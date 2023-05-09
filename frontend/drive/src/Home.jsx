@@ -14,7 +14,7 @@ function Home() {
         Credential: "includes",
       };
 
-      const response = await fetch(`${backendUrl}/auth`, fetchObject);
+      const response = await fetch(`/auth`, fetchObject);
 
       console.log(response);
 

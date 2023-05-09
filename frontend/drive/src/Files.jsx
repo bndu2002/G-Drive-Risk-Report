@@ -38,7 +38,7 @@ function Files() {
       const code = urlParams.get("code");
 
       const response = await fetch(
-        `${backendUrl}/Oauth2callback?code=${code}`,
+        `/Oauth2callback?code=${code}`,
         fetchObject
       );
 
@@ -88,7 +88,7 @@ function Files() {
         Credential: "includes",
       };
 
-      let response = await fetch(`${backendUrl}/auth/revokeToken`, fetchObject);
+      let response = await fetch(`/auth/revokeToken`, fetchObject);
 
       if (response.ok) {
         navigate("/");

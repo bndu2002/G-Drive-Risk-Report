@@ -48,7 +48,7 @@ const getToken = async function (req, res, next) {
                     code,
                     client_id: '237393158742-se7477e3kpsp266lpjoenr4is60ta3i9.apps.googleusercontent.com',
                     client_secret: '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',
-                    redirect_uri: 'https://6458e1b51db3332083a15552--chic-tanuki-6f29cd.netlify.app/Oauth2callback',
+                    redirect_uri: 'http://localhost:3001/Oauth2callback',
                     grant_type: 'authorization_code'
                 }
             });
